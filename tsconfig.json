@@ -1,5 +1,13 @@
 {
     "compilerOptions": {
+      "baseUrl": "./src",
+      "paths": {
+        "@screens/*": ["./screens/*"],
+        "@components/*": ["./components/*"],
+        "@styles/*": ["./styles/*"],
+        "@navigation/*": ["./navigation/*"],
+        "@svg/*": ["./assets/svg/*"],
+      },
       "allowJs": true,
       "allowSyntheticDefaultImports": true,
       "esModuleInterop": true,
@@ -10,12 +18,6 @@
       "noEmit": true,
       "strict": true,
       "target": "esnext",
-      "baseUrl": "./src",
-      "paths": {
-        "@screens/*": ["./screens/*"],
-        "@styles/*": ["./styles/*"],
-        "@svg/*": ["./assets/svg/*"],
-      },
     },
     "exclude": [
       "node_modules",

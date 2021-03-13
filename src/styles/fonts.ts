@@ -1,9 +1,10 @@
 export const fonts = {
   family: {
-    regular: 'Montserrat-Regular',
-    bold: 'Montserrat-Bold',
+    regular: "Montserrat-Regular",
+    bold: "Montserrat-Bold",
   },
   size: {
+    fontSize12: 12,
     fontSize14: 14,
     fontSize16: 16,
     fontSize18: 18,

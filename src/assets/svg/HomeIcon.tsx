@@ -1,18 +1,12 @@
-import * as React from 'react';
-import Svg, { SvgProps, Path, Rect } from 'react-native-svg';
+import * as React from "react";
+import Svg, { SvgProps, Path, Rect } from "react-native-svg";
 
-function HomeIcon(props: SvgProps) {
+function HomeIcon({ color = "#EC008C" }: { color?: string }) {
   return (
-    <Svg
-      width={24}
-      height={24}
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}>
+    <Svg width={24} height={24} viewBox="0 0 24 24" fill="none">
       <Path
         d="M3 10.89a1 1 0 01.331-.743l8-7.2a1 1 0 011.338 0l8 7.2a1 1 0 01.331.744V20a1 1 0 01-1 1H4a1 1 0 01-1-1v-9.11z"
-        stroke="#EC008C"
+        stroke={color}
         strokeWidth={2}
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -23,7 +17,7 @@ function HomeIcon(props: SvgProps) {
         width={6}
         height={8}
         rx={1}
-        stroke="#EC008C"
+        stroke={color}
         strokeWidth={2}
       />
     </Svg>

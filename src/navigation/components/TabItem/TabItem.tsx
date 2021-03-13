@@ -2,27 +2,29 @@ import React from "react";
 import { View } from "react-native";
 
 import HomeIcon from "@svg/HomeIcon";
-import { Text } from "components/Text";
+import { Text } from "@components/Text";
 
 import styles from "./styles";
+import { colors } from "@styles/colors";
 
 interface ITabItem {
   routeName: "Home" | "Shopping" | "Payment" | "Cards" | "Ticket" | string;
+  focused: boolean;
 }
 
-const TabItem: React.FC<ITabItem> = ({ routeName }) => {
+const TabItem: React.FC<ITabItem> = ({ routeName, focused }) => {
   function getIcon() {
     switch (routeName) {
       case "Home":
-        return <HomeIcon />;
+        return <HomeIcon color={focused ? colors.pink : colors.black} />;
       case "Shopping":
-        return <HomeIcon />;
+        return <HomeIcon color={focused ? colors.pink : colors.black} />;
       case "Payment":
-        return <HomeIcon />;
+        return <HomeIcon color={focused ? colors.pink : colors.black} />;
       case "Cards":
-        return <HomeIcon />;
+        return <HomeIcon color={focused ? colors.pink : colors.black} />;
       case "Ticket":
-        return <HomeIcon />;
+        return <HomeIcon color={focused ? colors.pink : colors.black} />;
       default:
         return null;
     }
@@ -48,7 +50,9 @@ const TabItem: React.FC<ITabItem> = ({ routeName }) => {
   return (
     <View style={styles.tabItemView}>
       {getIcon()}
-      <Text>{getTitle()}</Text>
+      <View style={styles.tabItemText}>
+        <Text color={focused ? "pink" : "black"}>{getTitle()}</Text>
+      </View>
     </View>
   );
 };

@@ -14,8 +14,8 @@ interface IText {
 export const Text: React.FC<IText> = ({
   children,
   fontWeight = "regular",
-  fontSize = fonts.size.fontSize14,
-  color = colors.black,
+  fontSize = fonts.size.fontSize12,
+  color = "black",
   textStyle,
   ...rest
 }) => {
@@ -24,11 +24,30 @@ export const Text: React.FC<IText> = ({
     bold: fonts.family.bold,
   };
 
+  function getTextColor() {
+    switch (color) {
+      case "pink":
+        return colors.pink;
+
+      case "cyan":
+        return colors.cyan;
+
+      case "green":
+        return colors.green;
+
+      case "black":
+        return colors.black;
+
+      default:
+        return color;
+    }
+  }
+
   function getStyle() {
     const style = {
       fontFamily: fontWeights["regular"],
       fontSize,
-      color,
+      color: getTextColor(),
     };
 
     if (!!fontWeights[fontWeight]) {
@@ -37,10 +56,6 @@ export const Text: React.FC<IText> = ({
 
     if (!!fontSize) {
       style.fontSize = fontSize;
-    }
-
-    if (!!color) {
-      style.color = color;
     }
 
     return style;
