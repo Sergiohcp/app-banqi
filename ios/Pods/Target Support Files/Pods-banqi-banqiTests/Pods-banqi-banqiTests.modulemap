@@ -1,0 +1,6 @@
+module Pods_banqi_banqiTests {
+  umbrella header "Pods-banqi-banqiTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

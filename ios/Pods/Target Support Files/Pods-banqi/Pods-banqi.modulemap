@@ -1,0 +1,6 @@
+module Pods_banqi {
+  umbrella header "Pods-banqi-umbrella.h"
+
+  export *
+  module * { export * }
+}
