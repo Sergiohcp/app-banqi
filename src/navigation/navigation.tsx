@@ -1,15 +1,16 @@
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-import HomeScreen from '@screens/HomeScreen';
-import ShoppingScreen from '@screens/ShoppingScreen';
-import PaymentScreen from '@screens/PaymentScreen';
-import CardsScreen from '@screens/CardsScreen';
-import TicketScreen from '@screens/TicketScreen';
-import HomeIcon from '@svg/HomeIcon';
-import { colors } from '@styles/colors';
+import HomeScreen from "@screens/HomeScreen";
+import ShoppingScreen from "@screens/ShoppingScreen";
+import PaymentScreen from "@screens/PaymentScreen";
+import CardsScreen from "@screens/CardsScreen";
+import TicketScreen from "@screens/TicketScreen";
+import HomeIcon from "@svg/HomeIcon";
+import { colors } from "@styles/colors";
+import TabItem from "./components/TabItem";
 
 const HomeStack = createStackNavigator();
 
@@ -69,13 +70,14 @@ function App() {
       <Tab.Navigator
         screenOptions={({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
-            return <HomeIcon />;
+            return <TabItem routeName={route.name} />;
           },
         })}
         tabBarOptions={{
           activeTintColor: colors.pink,
           inactiveTintColor: colors.black,
-        }}>
+        }}
+      >
         <Tab.Screen name="Home" component={HomeStackScreen} />
         <Tab.Screen name="Shopping" component={ShoppingStackScreen} />
         <Tab.Screen name="Payment" component={PaymentStackScreen} />
