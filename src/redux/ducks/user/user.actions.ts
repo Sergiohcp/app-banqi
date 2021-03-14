@@ -1,9 +1,14 @@
-import { takeLatest } from "redux-saga/effects";
+import { call, put, takeLatest } from "redux-saga/effects";
 
-import { UserActions } from "./user.types";
+import { getUserService } from "./user.services";
+import { IUserResponse, UserActions, UserReducers } from "./user.types";
 
 function* getUser() {
-  console.tron.log("PASSOU AQUI NA ACTION");
+  const user: IUserResponse = yield call(getUserService);
+  yield put({
+    type: UserReducers.UPDATE_STATE,
+    payload: user,
+  });
 }
 
 function* sagas() {

@@ -1,7 +1,7 @@
 import * as React from "react";
-import Svg, { SvgProps, Path, Rect } from "react-native-svg";
+import Svg, { Path, Rect } from "react-native-svg";
 
-function HomeIcon({ color = "#EC008C" }: { color?: string }) {
+function HomeIcon({ color = "#333333" }: { color?: string }) {
   return (
     <Svg width={24} height={24} viewBox="0 0 24 24" fill="none">
       <Path

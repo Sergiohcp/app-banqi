@@ -1,11 +1,15 @@
 import React from "react";
 import { View } from "react-native";
 
+import ShoppingIcon from "@svg/ShoppingIcon";
+import PaymentIcon from "@svg/PaymentIcon";
+import CardsIcon from "@svg/CardsIcon";
+import TicketIcon from "@svg/TicketIcon";
 import HomeIcon from "@svg/HomeIcon";
 import { Text } from "@components/Text";
+import { colors } from "@styles/colors";
 
 import styles from "./styles";
-import { colors } from "@styles/colors";
 
 interface ITabItem {
   routeName: "Home" | "Shopping" | "Payment" | "Cards" | "Ticket" | string;
@@ -18,13 +22,13 @@ const TabItem: React.FC<ITabItem> = ({ routeName, focused }) => {
       case "Home":
         return <HomeIcon color={focused ? colors.pink : colors.black} />;
       case "Shopping":
-        return <HomeIcon color={focused ? colors.pink : colors.black} />;
+        return <ShoppingIcon color={focused ? colors.pink : colors.black} />;
       case "Payment":
-        return <HomeIcon color={focused ? colors.pink : colors.black} />;
+        return <PaymentIcon color={focused ? colors.pink : colors.black} />;
       case "Cards":
-        return <HomeIcon color={focused ? colors.pink : colors.black} />;
+        return <CardsIcon color={focused ? colors.pink : colors.black} />;
       case "Ticket":
-        return <HomeIcon color={focused ? colors.pink : colors.black} />;
+        return <TicketIcon color={focused ? colors.pink : colors.black} />;
       default:
         return null;
     }
