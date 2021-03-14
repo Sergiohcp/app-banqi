@@ -15,6 +15,7 @@ interface IText {
   ml?: number;
   mr?: number;
   mb?: number;
+  opacity?: number;
 }
 
 export const Text: React.FC<IText> = ({
@@ -24,6 +25,7 @@ export const Text: React.FC<IText> = ({
   color = "black",
   textAlign = "left",
   textStyle,
+  opacity,
   ...rest
 }) => {
   const fontWeights = {
@@ -56,6 +58,7 @@ export const Text: React.FC<IText> = ({
       fontSize,
       color: getTextColor(),
       textAlign,
+      opacity,
     };
 
     if (!!fontWeights[fontWeight]) {

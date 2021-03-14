@@ -1,5 +1,5 @@
 import React from "react";
-import { Alert, ScrollView } from "react-native";
+import { Alert, FlatList, ScrollView } from "react-native";
 
 import Card from "@components/Card";
 import Container from "@components/Container";
@@ -58,24 +58,25 @@ const CardsSection: React.FC = () => {
   }
 
   return (
-    <Container mt={40}>
-      <ScrollView
-        horizontal
-        contentContainerStyle={{
-          paddingHorizontal: 20,
-        }}
-      >
-        {options.map((option, index: number) => (
-          <Container key={option.type} ml={index !== 0 ? 8 : 0}>
-            <Card
-              Icon={option.icon}
-              title={option.title}
-              onPress={option.onPress}
-            />
-          </Container>
-        ))}
-      </ScrollView>
-    </Container>
+    <ScrollView
+      horizontal
+      showsHorizontalScrollIndicator={false}
+      contentContainerStyle={{
+        marginTop: 20,
+        paddingHorizontal: 20,
+        paddingVertical: 20,
+      }}
+    >
+      {options.map((option, index: number) => (
+        <Container key={option.type} ml={index !== 0 ? 8 : 0}>
+          <Card
+            Icon={option.icon}
+            title={option.title}
+            onPress={option.onPress}
+          />
+        </Container>
+      ))}
+    </ScrollView>
   );
 };
 

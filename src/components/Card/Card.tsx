@@ -20,7 +20,7 @@ const Card: React.FC<ICard> = ({ Icon, title, onPress }) => {
         bgColor="white"
         borderRadius={4}
         shadow
-        p={16}
+        p={12}
       >
         <Icon color={colors.pink} />
         <Container mt={33}>

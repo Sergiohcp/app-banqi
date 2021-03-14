@@ -1,8 +1,8 @@
 import React from "react";
+import { Dimensions } from "react-native";
 import LottieView from "lottie-react-native";
 
 import Container from "@components/Container";
-import { Dimensions } from "react-native";
 import Header from "@components/Header";
 const pigLoading = require("@lottie/pig-loading.json");
 
@@ -17,7 +17,7 @@ const ScreenContent: React.FC<IScreenContent> = ({
   building = false,
 }) => {
   return (
-    <Container flex={1} bgColor="background">
+    <Container bgColor="background">
       <Header />
       {!loading ? (
         children

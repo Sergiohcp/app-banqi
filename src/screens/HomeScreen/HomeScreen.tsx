@@ -3,9 +3,11 @@ import { useDispatch, useSelector } from "react-redux";
 
 import { UserActions } from "@redux/ducks/user/user.types";
 import { getLoadingSelector } from "@redux/ducks/loading/loading.selectors";
-import CardsSection from "./components/CardsSection";
-import BalanceSection from "./components/BalanceSection";
 import ScreenContent from "layouts/ScreenContent";
+
+import BalanceSection from "./components/BalanceSection";
+import CardsSection from "./components/CardsSection";
+import LoanSection from "./components/LoanSection";
 
 const HomeScreen: React.FC = () => {
   const dispatch = useDispatch();
@@ -20,6 +22,7 @@ const HomeScreen: React.FC = () => {
     <ScreenContent loading={isUserLoading}>
       <BalanceSection />
       <CardsSection />
+      <LoanSection />
     </ScreenContent>
   );
 };

@@ -21,6 +21,8 @@ interface IContainer {
   mr?: number;
   mb?: number;
   p?: number;
+  pv?: number;
+  ph?: number;
   borderRadius?: number;
   style?: StyleProp<ViewStyle>;
   shadow?: boolean;
@@ -36,14 +38,16 @@ const Container: React.FC<IContainer> = ({
   justifyContent = "flex-start",
   alignItems = "flex-start",
   alignSelf = "auto",
-  mv = 0,
-  mh = 0,
-  mt = 0,
-  ml = 0,
-  mr = 0,
-  mb = 0,
-  p = 0,
-  borderRadius = 0,
+  mv,
+  mh,
+  mt,
+  ml,
+  mr,
+  mb,
+  p,
+  pv,
+  ph,
+  borderRadius,
   style,
   shadow = false,
   bgColor = "transparent",
@@ -88,6 +92,8 @@ const Container: React.FC<IContainer> = ({
     marginRight: mr,
     marginBottom: mb,
     padding: p,
+    paddingVertical: pv,
+    paddingHorizontal: ph,
     borderRadius,
     backgroundColor: getBackgroundColor(),
     width,
