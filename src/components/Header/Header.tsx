@@ -1,9 +1,10 @@
+import React from "react";
+
 import Container from "@components/Container";
 import { Text } from "@components/Text";
 import Logo from "@svg/Logo";
 import Notification from "@svg/Notification";
 import VectorDown from "@svg/VectorDown";
-import React from "react";
 
 const Header: React.FC = () => {
   return (
@@ -11,7 +12,7 @@ const Header: React.FC = () => {
       flexDirection="row"
       justifyContent="space-between"
       alignItems="center"
-      p={16}
+      p={20}
       mt={26}
     >
       <Container flex={1} flexDirection="row" alignItems="center">

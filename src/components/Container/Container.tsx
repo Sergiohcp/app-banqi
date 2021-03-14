@@ -13,6 +13,9 @@ interface IContainer {
     | "space-around"
     | "space-evenly";
   alignItems?: FlexAlignType;
+  alignSelf?: "auto" | FlexAlignType;
+  mv?: number;
+  mh?: number;
   mt?: number;
   ml?: number;
   mr?: number;
@@ -22,6 +25,8 @@ interface IContainer {
   style?: StyleProp<ViewStyle>;
   shadow?: boolean;
   bgColor?: string;
+  width?: number | string;
+  height?: number | string;
 }
 
 const Container: React.FC<IContainer> = ({
@@ -30,6 +35,9 @@ const Container: React.FC<IContainer> = ({
   flexDirection = "column",
   justifyContent = "flex-start",
   alignItems = "flex-start",
+  alignSelf = "auto",
+  mv = 0,
+  mh = 0,
   mt = 0,
   ml = 0,
   mr = 0,
@@ -39,6 +47,8 @@ const Container: React.FC<IContainer> = ({
   style,
   shadow = false,
   bgColor = "transparent",
+  width = "auto",
+  height = "auto",
 }) => {
   function getBackgroundColor() {
     switch (bgColor) {
@@ -70,6 +80,9 @@ const Container: React.FC<IContainer> = ({
     justifyContent: justifyContent,
     flexDirection,
     alignItems,
+    alignSelf,
+    marginVertical: mv,
+    marginHorizontal: mh,
     marginTop: mt,
     marginLeft: ml,
     marginRight: mr,
@@ -77,6 +90,8 @@ const Container: React.FC<IContainer> = ({
     padding: p,
     borderRadius,
     backgroundColor: getBackgroundColor(),
+    width,
+    height,
   };
 
   if (shadow) {

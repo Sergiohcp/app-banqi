@@ -1,8 +1,9 @@
-import { colors } from "@styles/colors";
 import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 
-function SvgComponent({ color = colors.black }: { color?: string }) {
+import { colors } from "@styles/colors";
+
+function ArrowDown({ color = colors.black }: { color?: string }) {
   return (
     <Svg width={24} height={29} viewBox="0 0 24 29" fill="none">
       <Path
@@ -13,4 +14,4 @@ function SvgComponent({ color = colors.black }: { color?: string }) {
   );
 }
 
-export default SvgComponent;
+export default ArrowDown;
