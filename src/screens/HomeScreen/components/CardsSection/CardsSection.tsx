@@ -1,10 +1,11 @@
+import React from "react";
+import { Alert, ScrollView } from "react-native";
+
 import Card from "@components/Card";
 import Container from "@components/Container";
 import ArrowDown from "@svg/ArrowDown";
 import ArrowUp from "@svg/ArrowUp";
 import Pix from "@svg/Pix";
-import React from "react";
-import { Alert, ScrollView } from "react-native";
 
 interface IOption {
   type: string;
