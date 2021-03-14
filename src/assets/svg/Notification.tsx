@@ -1,7 +1,7 @@
 import * as React from "react";
 import Svg, { Path, Circle } from "react-native-svg";
 
-function NotificationIcon() {
+function Notification() {
   return (
     <Svg width={24} height={24} viewBox="0 0 24 24" fill="none">
       <Path
@@ -19,4 +19,4 @@ function NotificationIcon() {
   );
 }
 
-export default NotificationIcon;
+export default Notification;

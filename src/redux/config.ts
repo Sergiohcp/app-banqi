@@ -4,6 +4,7 @@ import createSagaMiddleware from "redux-saga";
 import userReducers from "@redux/ducks/user/user.reducers";
 import userActions from "@redux/ducks/user/user.actions";
 import Reactotron from "../../ReactotronConfig";
+import User from "domain/User";
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -19,3 +20,7 @@ const store = createStore(
 sagaMiddleware.run(userActions);
 
 export default store;
+
+export interface AppState {
+  user: User;
+}

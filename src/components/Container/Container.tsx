@@ -1,3 +1,4 @@
+import { colors } from "@styles/colors";
 import React from "react";
 import { View, FlexAlignType, StyleProp, ViewStyle } from "react-native";
 
@@ -23,25 +24,51 @@ interface IContainer {
   bgColor?: string;
 }
 
-const Container: React.FC<IContainer> = ({ children, ...rest }) => {
-  const {
-    flex = 0,
-    justifyContent = "flex-start",
-    alignItems = "flex-start",
-    mt = 0,
-    ml = 0,
-    mr = 0,
-    mb = 0,
-    p = 0,
-    borderRadius = 0,
-    style,
-    shadow = false,
-    bgColor = "transparent",
-  } = rest;
+const Container: React.FC<IContainer> = ({
+  children,
+  flex = 0,
+  flexDirection = "column",
+  justifyContent = "flex-start",
+  alignItems = "flex-start",
+  mt = 0,
+  ml = 0,
+  mr = 0,
+  mb = 0,
+  p = 0,
+  borderRadius = 0,
+  style,
+  shadow = false,
+  bgColor = "transparent",
+}) => {
+  function getBackgroundColor() {
+    switch (bgColor) {
+      case "pink":
+        return colors.pink;
+
+      case "cyan":
+        return colors.cyan;
+
+      case "green":
+        return colors.green;
+
+      case "black":
+        return colors.black;
+
+      case "white":
+        return colors.white;
+
+      case "background":
+        return colors.background;
+
+      default:
+        return bgColor;
+    }
+  }
 
   let viewStyle: ViewStyle = {
     flex,
     justifyContent: justifyContent,
+    flexDirection,
     alignItems,
     marginTop: mt,
     marginLeft: ml,
@@ -49,7 +76,7 @@ const Container: React.FC<IContainer> = ({ children, ...rest }) => {
     marginBottom: mb,
     padding: p,
     borderRadius,
-    backgroundColor: bgColor,
+    backgroundColor: getBackgroundColor(),
   };
 
   if (shadow) {

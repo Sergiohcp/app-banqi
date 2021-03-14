@@ -16,6 +16,13 @@ class User implements IUser {
       (transaction) => new Transaction(transaction)
     );
   }
+
+  balanceCurrency() {
+    return this.balance.toLocaleString("pt-br", {
+      style: "currency",
+      currency: "BRL",
+    });
+  }
 }
 
 export default User;
