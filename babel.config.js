@@ -12,6 +12,7 @@ module.exports = {
           "@styles": "./src/styles",
           "@navigation": "./src/navigation",
           "@svg": "./src/assets/svg",
+          "@redux": "./src/redux",
         },
       },
     ],

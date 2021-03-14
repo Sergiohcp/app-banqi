@@ -7,6 +7,7 @@
         "@styles/*": ["./styles/*"],
         "@navigation/*": ["./navigation/*"],
         "@svg/*": ["./assets/svg/*"],
+        "@redux/*": ["./redux/*"],
       },
       "allowJs": true,
       "allowSyntheticDefaultImports": true,
