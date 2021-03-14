@@ -13,6 +13,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		41705667D63147A3BB9EA3A5 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D37A55CAF993430BB011F79E /* Montserrat-Bold.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		93DFA2EF25FE9086002D2DBC /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DFA2EE25FE9086002D2DBC /* File.swift */; };
 		9768C39C2901509EB8264C11 /* libPods-banqi-banqiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2FA7521FA53A5FDF827730 /* libPods-banqi-banqiTests.a */; };
 		E2607B9BC22F60E38803CA66 /* libPods-banqi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD0DDDA3C0D7C9C91F2D56E /* libPods-banqi.a */; };
 		E2B84DC506C643C6AEBDBAF9 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B93495F881444E07807DA0AE /* Montserrat-Regular.ttf */; };
@@ -43,9 +44,11 @@
 		3DD556450C209A6963054D9A /* Pods-banqi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-banqi.release.xcconfig"; path = "Target Support Files/Pods-banqi/Pods-banqi.release.xcconfig"; sourceTree = "<group>"; };
 		6BD0DDDA3C0D7C9C91F2D56E /* libPods-banqi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-banqi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = banqi/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B93495F881444E07807DA0AE /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Regular.ttf"; path = "../src/assets/fonts/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		93DFA2ED25FE9086002D2DBC /* banqi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "banqi-Bridging-Header.h"; sourceTree = "<group>"; };
+		93DFA2EE25FE9086002D2DBC /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		B93495F881444E07807DA0AE /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Regular.ttf"; path = "../src/assets/fonts/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		C4F803194AE5B9C52D9D4DD1 /* Pods-banqi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-banqi.debug.xcconfig"; path = "Target Support Files/Pods-banqi/Pods-banqi.debug.xcconfig"; sourceTree = "<group>"; };
-		D37A55CAF993430BB011F79E /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Bold.ttf"; path = "../src/assets/fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		D37A55CAF993430BB011F79E /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Bold.ttf"; path = "../src/assets/fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		DB321FD0F9F9465EB99B38B2 /* Pods-banqi-banqiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-banqi-banqiTests.release.xcconfig"; path = "Target Support Files/Pods-banqi-banqiTests/Pods-banqi-banqiTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -96,6 +99,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				93DFA2EE25FE9086002D2DBC /* File.swift */,
+				93DFA2ED25FE9086002D2DBC /* banqi-Bridging-Header.h */,
 			);
 			name = banqi;
 			sourceTree = "<group>";
@@ -150,7 +155,6 @@
 				292984EE14F91EFAEA7A1DD3 /* Pods-banqi-banqiTests.debug.xcconfig */,
 				DB321FD0F9F9465EB99B38B2 /* Pods-banqi-banqiTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -161,7 +165,6 @@
 				B93495F881444E07807DA0AE /* Montserrat-Regular.ttf */,
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,7 +226,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -429,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				93DFA2EF25FE9086002D2DBC /* File.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,6 +452,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 292984EE14F91EFAEA7A1DD3 /* Pods-banqi-banqiTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -475,6 +480,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DB321FD0F9F9465EB99B38B2 /* Pods-banqi-banqiTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = banqiTests/Info.plist;
@@ -515,6 +521,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = banqi;
+				SWIFT_OBJC_BRIDGING_HEADER = "banqi-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -540,6 +547,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = banqi;
+				SWIFT_OBJC_BRIDGING_HEADER = "banqi-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

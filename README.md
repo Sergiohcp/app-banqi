@@ -33,6 +33,10 @@ or
 react-native run-android
 ```
 
+## State management
+
+This project could use Redux or Context API to state management. I chose redux, for the greatest worldwide use.
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

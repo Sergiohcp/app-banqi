@@ -10,6 +10,7 @@
         "@mocks/*": ["./mocks/*"],
         "@utils/*": ["./utils/*"],
         "@svg/*": ["./assets/svg/*"],
+        "@lottie/*": ["./assets/lottie/*"],
       },
       "allowJs": true,
       "allowSyntheticDefaultImports": true,

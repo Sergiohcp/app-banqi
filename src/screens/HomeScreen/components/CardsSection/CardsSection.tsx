@@ -66,7 +66,7 @@ const CardsSection: React.FC = () => {
         }}
       >
         {options.map((option, index: number) => (
-          <Container ml={index !== 0 ? 8 : 0}>
+          <Container key={option.type} ml={index !== 0 ? 8 : 0}>
             <Card
               Icon={option.icon}
               title={option.title}

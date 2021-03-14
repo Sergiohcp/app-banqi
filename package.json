@@ -16,6 +16,8 @@
     "@react-navigation/stack": "^5.14.3",
     "@types/redux-saga": "^0.10.5",
     "axios": "^0.21.1",
+    "lottie-ios": "3.1.8",
+    "lottie-react-native": "^3.5.0",
     "react": "17.0.1",
     "react-native": "0.64.0",
     "react-native-gesture-handler": "^1.10.3",

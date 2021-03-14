@@ -15,6 +15,7 @@ module.exports = {
           "@mocks": "./src/mocks",
           "@utils": "./src/utils",
           "@svg": "./src/assets/svg",
+          "@lottie": "./src/assets/lottie",
         },
       },
     ],

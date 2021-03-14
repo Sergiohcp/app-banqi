@@ -13,7 +13,7 @@ function* getUser() {
   });
   const user: IUserResponse = yield call(getUserService);
 
-  yield delay(1000);
+  yield delay(500);
 
   yield put({
     type: UserReducers.UPDATE_STATE,

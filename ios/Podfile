@@ -12,6 +12,8 @@ target 'banqi' do
     :hermes_enabled => false
   )
 
+  pod 'lottie-ios', :path => '../node_modules/lottie-ios'
+
   target 'banqiTests' do
     inherit! :complete
     # Pods for testing
