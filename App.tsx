@@ -3,11 +3,14 @@ import { Provider } from "react-redux";
 
 import App from "@navigation/index";
 import store from "@redux/config";
+import { ModalProvider } from "@components/providers/ModalProvider/ModalProvider";
 
 function banQi() {
   return (
     <Provider store={store}>
-      <App />
+      <ModalProvider>
+        <App />
+      </ModalProvider>
     </Provider>
   );
 }

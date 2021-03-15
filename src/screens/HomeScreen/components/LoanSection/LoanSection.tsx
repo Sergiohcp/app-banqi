@@ -1,17 +1,19 @@
 import React from "react";
-import { Alert } from "react-native";
 
 import Container from "@components/Container";
 import { Text } from "@components/Text";
 import Touchable from "@components/Touchable";
 import Loan from "@svg/Loan";
+import { useModal } from "@components/providers/ModalProvider/ModalProvider";
 
 const LoanSection: React.FC = () => {
+  const { showModal } = useModal();
+
   function onLoanPress() {
-    Alert.alert(
-      "Empréstimo pessoal",
-      "Legal, temos um empréstimo incrível para você!"
-    );
+    showModal({
+      title: "Empréstimo pessoal",
+      description: "Legal, temos um empréstimo incrível para você!",
+    });
   }
   return (
     <Touchable onPress={onLoanPress}>

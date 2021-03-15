@@ -6,11 +6,26 @@ import { Text } from "@components/Text";
 import Touchable from "@components/Touchable";
 import { getUserSelector } from "@redux/ducks/user/user.selectors";
 import EyeOutline from "@svg/EyeOutline";
+import { useModal } from "@components/providers/ModalProvider/ModalProvider";
 
 const BalanceSection: React.FC = () => {
+  const { showModal } = useModal();
   const user = useSelector(getUserSelector);
 
   const [showValue, setShowValue] = useState(false);
+  const [shouldShowModal, setShouldShowModal] = useState(true);
+
+  function onBalancePress() {
+    if (shouldShowModal) {
+      showModal({
+        title: "Saldo",
+        description:
+          "Lembre-se que seu saldo está visível, olhe sempre ao redor.",
+      });
+      setShouldShowModal(false);
+    }
+    setShowValue(!showValue);
+  }
 
   return (
     <Container alignItems="center" alignSelf="center">
@@ -24,10 +39,7 @@ const BalanceSection: React.FC = () => {
         <Text fontSize={28} fontWeight="bold">
           {showValue ? user.balanceCurrency().substring(3) : "--"}
         </Text>
-        <Touchable
-          type="WithoutFeedback"
-          onPress={() => setShowValue(!showValue)}
-        >
+        <Touchable type="WithoutFeedback" onPress={onBalancePress}>
           <Container ml={12}>
             <EyeOutline visible={showValue} />
           </Container>

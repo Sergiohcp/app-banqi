@@ -6,11 +6,16 @@ import Logo from "@svg/Logo";
 import Notification from "@svg/Notification";
 import VectorDown from "@svg/VectorDown";
 import Touchable from "@components/Touchable";
-import { Alert } from "react-native";
+import { useModal } from "@components/providers/ModalProvider/ModalProvider";
 
 const Header: React.FC = () => {
+  const { showModal } = useModal();
+
   function onNotificationPress() {
-    Alert.alert("Notificações", "Aqui é onde você pode ver suas notificações");
+    showModal({
+      title: "Notificações",
+      description: "Aqui é onde você pode ver suas notificações",
+    });
   }
   return (
     <Container

@@ -1,11 +1,12 @@
 import React from "react";
-import { Alert, FlatList, ScrollView } from "react-native";
+import { ScrollView } from "react-native";
 
 import Card from "@components/Card";
 import Container from "@components/Container";
 import ArrowDown from "@svg/ArrowDown";
 import ArrowUp from "@svg/ArrowUp";
 import Pix from "@svg/Pix";
+import { useModal } from "@components/providers/ModalProvider/ModalProvider";
 
 interface IOption {
   type: string;
@@ -15,6 +16,8 @@ interface IOption {
 }
 
 const CardsSection: React.FC = () => {
+  const { showModal } = useModal();
+
   const options: IOption[] = [
     {
       type: "PIX",
@@ -37,24 +40,27 @@ const CardsSection: React.FC = () => {
   ];
 
   function onPixPress() {
-    Alert.alert(
-      "PIX",
-      "Bem vindo(a) ao PIX, em breve você poderá fazer transações bem rápidas"
-    );
+    showModal({
+      title: "PIX",
+      description:
+        "Bem vindo(a) ao PIX, em breve você poderá fazer transações bem rápidas",
+    });
   }
 
   function onDepositPress() {
-    Alert.alert(
-      "Depósito",
-      "Ei, estamos trabalhando a todos vapor para disponibilizar a funcionaldiade de depósito"
-    );
+    showModal({
+      title: "Depósito",
+      description:
+        "Ei, estamos trabalhando a todos vapor para disponibilizar a funcionaldiade de depósito",
+    });
   }
 
   function onWithdrawPress() {
-    Alert.alert(
-      "Saque",
-      "Ei, estamos trabalhando a todos vapor para disponibilizar a funcionaldiade de saque"
-    );
+    showModal({
+      title: "Saque",
+      description:
+        "Ei, estamos trabalhando a todos vapor para disponibilizar a funcionaldiade de saque",
+    });
   }
 
   return (
