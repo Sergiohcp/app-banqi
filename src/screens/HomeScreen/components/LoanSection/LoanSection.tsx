@@ -4,7 +4,7 @@ import Container from "@components/Container";
 import { Text } from "@components/Text";
 import Touchable from "@components/Touchable";
 import Loan from "@svg/Loan";
-import { useModal } from "@components/providers/ModalProvider/ModalProvider";
+import { useModal } from "@providers/ModalProvider";
 
 const LoanSection: React.FC = () => {
   const { showModal } = useModal();

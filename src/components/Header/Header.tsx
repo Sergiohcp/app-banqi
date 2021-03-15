@@ -6,7 +6,7 @@ import Logo from "@svg/Logo";
 import Notification from "@svg/Notification";
 import VectorDown from "@svg/VectorDown";
 import Touchable from "@components/Touchable";
-import { useModal } from "@components/providers/ModalProvider/ModalProvider";
+import { useModal } from "@providers/ModalProvider";
 
 const Header: React.FC = () => {
   const { showModal } = useModal();

@@ -6,7 +6,7 @@ import Container from "@components/Container";
 import ArrowDown from "@svg/ArrowDown";
 import ArrowUp from "@svg/ArrowUp";
 import Pix from "@svg/Pix";
-import { useModal } from "@components/providers/ModalProvider/ModalProvider";
+import { useModal } from "@providers/ModalProvider";
 
 interface IOption {
   type: string;

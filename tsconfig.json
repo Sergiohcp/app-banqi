@@ -11,6 +11,7 @@
         "@utils/*": ["./utils/*"],
         "@svg/*": ["./assets/svg/*"],
         "@lottie/*": ["./assets/lottie/*"],
+        "@providers/*": ["./providers/*"],
       },
       "allowJs": true,
       "allowSyntheticDefaultImports": true,

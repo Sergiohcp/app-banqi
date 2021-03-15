@@ -3,7 +3,7 @@ import { Provider } from "react-redux";
 
 import App from "@navigation/index";
 import store from "@redux/config";
-import { ModalProvider } from "@components/providers/ModalProvider/ModalProvider";
+import { ModalProvider } from "@providers/ModalProvider";
 
 function banQi() {
   return (

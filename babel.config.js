@@ -16,6 +16,7 @@ module.exports = {
           "@utils": "./src/utils",
           "@svg": "./src/assets/svg",
           "@lottie": "./src/assets/lottie",
+          "@providers": "./src/providers",
         },
       },
     ],

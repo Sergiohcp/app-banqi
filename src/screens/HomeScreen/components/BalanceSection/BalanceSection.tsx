@@ -6,7 +6,7 @@ import { Text } from "@components/Text";
 import Touchable from "@components/Touchable";
 import { getUserSelector } from "@redux/ducks/user/user.selectors";
 import EyeOutline from "@svg/EyeOutline";
-import { useModal } from "@components/providers/ModalProvider/ModalProvider";
+import { useModal } from "@providers/ModalProvider";
 
 const BalanceSection: React.FC = () => {
   const { showModal } = useModal();
