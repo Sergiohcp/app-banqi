@@ -1,5 +1,4 @@
 import React from "react";
-import { View } from "react-native";
 
 import ShoppingIcon from "@svg/ShoppingIcon";
 import PaymentIcon from "@svg/PaymentIcon";
@@ -8,8 +7,7 @@ import TicketIcon from "@svg/TicketIcon";
 import HomeIcon from "@svg/HomeIcon";
 import { Text } from "@components/Text";
 import { colors } from "@styles/colors";
-
-import styles from "./styles";
+import Container from "@components/Container";
 
 interface ITabItem {
   routeName: "Home" | "Shopping" | "Payment" | "Cards" | "Ticket" | string;
@@ -52,12 +50,12 @@ const TabItem: React.FC<ITabItem> = ({ routeName, focused }) => {
   }
 
   return (
-    <View style={styles.tabItemView}>
+    <Container alignItems="center" mt={8}>
       {getIcon()}
-      <View style={styles.tabItemText}>
-        <Text color={focused ? "pink" : "black"}>{getTitle()}</Text>
-      </View>
-    </View>
+      <Text color={focused ? "pink" : "black"} mt={4}>
+        {getTitle()}
+      </Text>
+    </Container>
   );
 };
 

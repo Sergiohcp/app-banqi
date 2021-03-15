@@ -4,6 +4,8 @@ import LottieView from "lottie-react-native";
 
 import Container from "@components/Container";
 import Header from "@components/Header";
+import Build from "@svg/Build";
+import { Text } from "@components/Text";
 const pigLoading = require("@lottie/pig-loading.json");
 
 interface IScreenContent {
@@ -19,6 +21,14 @@ const ScreenContent: React.FC<IScreenContent> = ({
   return (
     <Container flex={1} bgColor="background">
       <Header />
+      {building && (
+        <Container flex={1} alignItems="center" mt={90} mh={20}>
+          <Build />
+          <Text fontSize={20} fontWeight="bold" textAlign="center" mt={12}>
+            Esta tela ainda está em contrução!
+          </Text>
+        </Container>
+      )}
       {!loading ? (
         children
       ) : (
