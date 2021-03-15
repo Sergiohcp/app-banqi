@@ -58,25 +58,27 @@ const CardsSection: React.FC = () => {
   }
 
   return (
-    <ScrollView
-      horizontal
-      showsHorizontalScrollIndicator={false}
-      contentContainerStyle={{
-        marginTop: 20,
-        paddingHorizontal: 20,
-        paddingVertical: 20,
-      }}
-    >
-      {options.map((option, index: number) => (
-        <Container key={option.type} ml={index !== 0 ? 8 : 0}>
-          <Card
-            Icon={option.icon}
-            title={option.title}
-            onPress={option.onPress}
-          />
-        </Container>
-      ))}
-    </ScrollView>
+    <Container height={144}>
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        contentContainerStyle={{
+          paddingHorizontal: 20,
+          alignItems: "center",
+          height: 144,
+        }}
+      >
+        {options.map((option, index: number) => (
+          <Container key={option.type} ml={index !== 0 ? 8 : 0}>
+            <Card
+              Icon={option.icon}
+              title={option.title}
+              onPress={option.onPress}
+            />
+          </Container>
+        ))}
+      </ScrollView>
+    </Container>
   );
 };
 

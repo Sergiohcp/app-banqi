@@ -8,6 +8,8 @@ import ScreenContent from "layouts/ScreenContent";
 import BalanceSection from "./components/BalanceSection";
 import CardsSection from "./components/CardsSection";
 import LoanSection from "./components/LoanSection";
+import TransactionsSection from "./components/TransactionsSection";
+import Container from "@components/Container";
 
 const HomeScreen: React.FC = () => {
   const dispatch = useDispatch();
@@ -20,9 +22,14 @@ const HomeScreen: React.FC = () => {
 
   return (
     <ScreenContent loading={isUserLoading}>
-      <BalanceSection />
-      <CardsSection />
-      <LoanSection />
+      <Container flex={1} justifyContent="space-between">
+        <Container>
+          <BalanceSection />
+          <CardsSection />
+          <LoanSection />
+        </Container>
+      </Container>
+      <TransactionsSection />
     </ScreenContent>
   );
 };

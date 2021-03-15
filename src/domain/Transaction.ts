@@ -2,6 +2,7 @@ import {
   ITransaction,
   ITransactionResponse,
 } from "@redux/ducks/user/user.types";
+import moment from "moment";
 
 class Transaction implements ITransaction {
   id: string;
@@ -14,6 +15,19 @@ class Transaction implements ITransaction {
     this.date = date;
     this.description = description;
     this.amount = Number(amount);
+  }
+
+  amountCurrency() {
+    return `${this.amount > 0 ? "+" : "-"} ${Math.abs(
+      this.amount
+    ).toLocaleString("pt-br", {
+      style: "currency",
+      currency: "BRL",
+    })}`;
+  }
+
+  dateFormated() {
+    return moment(this.date).format("DD/MM/YYYY");
   }
 }
 

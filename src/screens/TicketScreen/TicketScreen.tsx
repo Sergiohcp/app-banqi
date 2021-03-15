@@ -1,11 +1,13 @@
-import React from 'react';
-import { View, Text } from 'react-native';
+import React from "react";
+import { Text } from "react-native";
+
+import ScreenContent from "layouts/ScreenContent";
 
 const TicketScreen: React.FC = () => {
   return (
-    <View>
-      <Text>TICKET</Text>
-    </View>
+    <ScreenContent fullScreen>
+      <Text>CARNÊS</Text>
+    </ScreenContent>
   );
 };
 

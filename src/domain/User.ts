@@ -23,6 +23,10 @@ class User implements IUser {
       currency: "BRL",
     });
   }
+
+  firstThreeTransactions() {
+    return this.transactions.filter((_, index) => index < 3);
+  }
 }
 
 export default User;

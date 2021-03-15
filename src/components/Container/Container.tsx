@@ -23,6 +23,8 @@ interface IContainer {
   p?: number;
   pv?: number;
   ph?: number;
+  pt?: number;
+  pb?: number;
   borderRadius?: number;
   style?: StyleProp<ViewStyle>;
   shadow?: boolean;
@@ -36,7 +38,7 @@ const Container: React.FC<IContainer> = ({
   flex = 0,
   flexDirection = "column",
   justifyContent = "flex-start",
-  alignItems = "flex-start",
+  alignItems,
   alignSelf = "auto",
   mv,
   mh,
@@ -47,12 +49,14 @@ const Container: React.FC<IContainer> = ({
   p,
   pv,
   ph,
+  pt,
+  pb,
   borderRadius,
   style,
   shadow = false,
   bgColor = "transparent",
-  width = "auto",
-  height = "auto",
+  width,
+  height,
 }) => {
   function getBackgroundColor() {
     switch (bgColor) {
@@ -94,6 +98,8 @@ const Container: React.FC<IContainer> = ({
     padding: p,
     paddingVertical: pv,
     paddingHorizontal: ph,
+    paddingTop: pt,
+    paddingBottom: pb,
     borderRadius,
     backgroundColor: getBackgroundColor(),
     width,

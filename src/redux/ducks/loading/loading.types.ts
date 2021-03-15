@@ -1,5 +1,5 @@
 export const LoadingReducers = {
-  UPDATE_STATE: "UPDATE_STATE",
+  UPDATE_STATE: "LOADING/UPDATE_STATE",
 };
 
 export interface ILoadingInitialState {

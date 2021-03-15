@@ -17,7 +17,7 @@ const ScreenContent: React.FC<IScreenContent> = ({
   building = false,
 }) => {
   return (
-    <Container bgColor="background">
+    <Container flex={1} bgColor="background">
       <Header />
       {!loading ? (
         children

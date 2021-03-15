@@ -3,7 +3,7 @@ export const UserActions = {
 };
 
 export const UserReducers = {
-  UPDATE_STATE: "UPDATE_STATE",
+  UPDATE_STATE: "USER/UPDATE_STATE",
 };
 
 export interface ITransactionResponse {
