@@ -5,8 +5,13 @@ import { Text } from "@components/Text";
 import Logo from "@svg/Logo";
 import Notification from "@svg/Notification";
 import VectorDown from "@svg/VectorDown";
+import Touchable from "@components/Touchable";
+import { Alert } from "react-native";
 
 const Header: React.FC = () => {
+  function onNotificationPress() {
+    Alert.alert("Notificações", "Aqui é onde você pode ver suas notificações");
+  }
   return (
     <Container
       flexDirection="row"
@@ -24,9 +29,11 @@ const Header: React.FC = () => {
           <VectorDown />
         </Container>
       </Container>
-      <Container>
-        <Notification />
-      </Container>
+      <Touchable type="WithoutFeedback" onPress={onNotificationPress}>
+        <Container>
+          <Notification />
+        </Container>
+      </Touchable>
     </Container>
   );
 };

@@ -39,21 +39,21 @@ const CardsSection: React.FC = () => {
   function onPixPress() {
     Alert.alert(
       "PIX",
-      "Bem vindo(a) ao PIX, em breve você poderá fazer transações bem rápidas."
+      "Bem vindo(a) ao PIX, em breve você poderá fazer transações bem rápidas"
     );
   }
 
   function onDepositPress() {
     Alert.alert(
       "Depósito",
-      "Ei, estamos trabalhando a todos vapor para disponibilizar a funcionaldiade de depósito."
+      "Ei, estamos trabalhando a todos vapor para disponibilizar a funcionaldiade de depósito"
     );
   }
 
   function onWithdrawPress() {
     Alert.alert(
       "Saque",
-      "Ei, estamos trabalhando a todos vapor para disponibilizar a funcionaldiade de saque."
+      "Ei, estamos trabalhando a todos vapor para disponibilizar a funcionaldiade de saque"
     );
   }
 

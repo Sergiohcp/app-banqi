@@ -1,9 +1,13 @@
 import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 
-function Logo() {
+function Logo({ size = 1 }: { size?: number }) {
+  const width = 64 * size;
+  const aspect = 64 / 18;
+  const adjustedHeight = Math.ceil(width / aspect);
+
   return (
-    <Svg width={64} height={18} viewBox="0 0 64 18" fill="none">
+    <Svg width={width} height={adjustedHeight} viewBox="0 0 64 18" fill="none">
       <Path
         fillRule="evenodd"
         clipRule="evenodd"
