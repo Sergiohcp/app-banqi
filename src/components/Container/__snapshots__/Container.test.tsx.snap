@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container test should take snapshot of component 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": undefined,
+        "alignSelf": "auto",
+        "backgroundColor": "#EC008C",
+        "borderRadius": undefined,
+        "flex": 0,
+        "flexDirection": "column",
+        "height": 25,
+        "justifyContent": "flex-start",
+        "marginBottom": undefined,
+        "marginHorizontal": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "marginVertical": undefined,
+        "padding": undefined,
+        "paddingBottom": undefined,
+        "paddingHorizontal": undefined,
+        "paddingTop": undefined,
+        "paddingVertical": undefined,
+        "width": 25,
+      },
+      undefined,
+    ]
+  }
+/>
+`;

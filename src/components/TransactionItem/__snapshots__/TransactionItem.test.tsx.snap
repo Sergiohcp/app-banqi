@@ -1,0 +1,326 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TransactionItem test should take snapshot of component 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": undefined,
+          "alignSelf": "auto",
+          "backgroundColor": "transparent",
+          "borderRadius": undefined,
+          "flex": 0,
+          "flexDirection": "row",
+          "height": undefined,
+          "justifyContent": "space-between",
+          "marginBottom": undefined,
+          "marginHorizontal": undefined,
+          "marginLeft": undefined,
+          "marginRight": undefined,
+          "marginTop": undefined,
+          "marginVertical": undefined,
+          "padding": undefined,
+          "paddingBottom": undefined,
+          "paddingHorizontal": undefined,
+          "paddingTop": undefined,
+          "paddingVertical": undefined,
+          "width": undefined,
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "alignSelf": "auto",
+            "backgroundColor": "transparent",
+            "borderRadius": undefined,
+            "flex": 0,
+            "flexDirection": "row",
+            "height": undefined,
+            "justifyContent": "flex-start",
+            "marginBottom": undefined,
+            "marginHorizontal": undefined,
+            "marginLeft": undefined,
+            "marginRight": undefined,
+            "marginTop": undefined,
+            "marginVertical": undefined,
+            "padding": undefined,
+            "paddingBottom": undefined,
+            "paddingHorizontal": undefined,
+            "paddingTop": undefined,
+            "paddingVertical": undefined,
+            "width": undefined,
+          },
+          undefined,
+        ]
+      }
+    >
+      <RNSVGSvgView
+        align="xMidYMid"
+        bbHeight={29}
+        bbWidth={24}
+        fill="none"
+        focusable={false}
+        height={29}
+        meetOrSlice={0}
+        minX={0}
+        minY={0}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            Object {
+              "flex": 0,
+              "height": 29,
+              "width": 24,
+            },
+          ]
+        }
+        vbHeight={29}
+        vbWidth={24}
+        width={24}
+      >
+        <RNSVGGroup
+          fill={null}
+          propList={
+            Array [
+              "fill",
+            ]
+          }
+        >
+          <RNSVGPath
+            d="M13.002 1a1 1 0 10-2 0h2zm-1 26l-.707.707.707.707.707-.707-.707-.707zm10.92-9.507a1 1 0 00-1.413-1.414l1.414 1.414zM2.495 16.079a1 1 0 10-1.414 1.414l1.414-1.414zM11.002 1v26h2V1h-2zM21.509 16.08L11.295 26.293l1.414 1.414 10.214-10.214-1.414-1.414zm-8.8 10.214L2.494 16.079 1.08 17.493l10.215 10.214 1.414-1.414z"
+            fill={4281545523}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+          />
+        </RNSVGGroup>
+      </RNSVGSvgView>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": undefined,
+              "alignSelf": "auto",
+              "backgroundColor": "transparent",
+              "borderRadius": undefined,
+              "flex": 0,
+              "flexDirection": "column",
+              "height": undefined,
+              "justifyContent": "flex-start",
+              "marginBottom": undefined,
+              "marginHorizontal": undefined,
+              "marginLeft": 20,
+              "marginRight": undefined,
+              "marginTop": undefined,
+              "marginVertical": undefined,
+              "padding": undefined,
+              "paddingBottom": undefined,
+              "paddingHorizontal": undefined,
+              "paddingTop": undefined,
+              "paddingVertical": undefined,
+              "width": undefined,
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": undefined,
+                "alignSelf": "auto",
+                "backgroundColor": "transparent",
+                "borderRadius": undefined,
+                "flex": 0,
+                "flexDirection": "column",
+                "height": undefined,
+                "justifyContent": "flex-start",
+                "marginBottom": undefined,
+                "marginHorizontal": undefined,
+                "marginLeft": undefined,
+                "marginRight": undefined,
+                "marginTop": undefined,
+                "marginVertical": undefined,
+                "padding": undefined,
+                "paddingBottom": undefined,
+                "paddingHorizontal": undefined,
+                "paddingTop": undefined,
+                "paddingVertical": undefined,
+                "width": undefined,
+              },
+              undefined,
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#333333",
+                  "fontFamily": "Montserrat-Regular",
+                  "fontSize": 14,
+                  "opacity": undefined,
+                  "textAlign": "left",
+                },
+                undefined,
+              ]
+            }
+          >
+            Cashback
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": undefined,
+                "alignSelf": "auto",
+                "backgroundColor": "transparent",
+                "borderRadius": undefined,
+                "flex": 0,
+                "flexDirection": "column",
+                "height": undefined,
+                "justifyContent": "flex-start",
+                "marginBottom": undefined,
+                "marginHorizontal": undefined,
+                "marginLeft": undefined,
+                "marginRight": undefined,
+                "marginTop": 2,
+                "marginVertical": undefined,
+                "padding": undefined,
+                "paddingBottom": undefined,
+                "paddingHorizontal": undefined,
+                "paddingTop": undefined,
+                "paddingVertical": undefined,
+                "width": undefined,
+              },
+              undefined,
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#14C46F",
+                  "fontFamily": "Montserrat-Regular",
+                  "fontSize": 14,
+                  "opacity": undefined,
+                  "textAlign": "left",
+                },
+                undefined,
+              ]
+            }
+          >
+            Recebido em 
+            14/01/2021
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": undefined,
+            "alignSelf": "auto",
+            "backgroundColor": "transparent",
+            "borderRadius": undefined,
+            "flex": 0,
+            "flexDirection": "column",
+            "height": undefined,
+            "justifyContent": "flex-start",
+            "marginBottom": undefined,
+            "marginHorizontal": undefined,
+            "marginLeft": undefined,
+            "marginRight": undefined,
+            "marginTop": undefined,
+            "marginVertical": undefined,
+            "padding": undefined,
+            "paddingBottom": undefined,
+            "paddingHorizontal": undefined,
+            "paddingTop": undefined,
+            "paddingVertical": undefined,
+            "width": undefined,
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": undefined,
+              "alignSelf": "auto",
+              "backgroundColor": "transparent",
+              "borderRadius": undefined,
+              "flex": 0,
+              "flexDirection": "column",
+              "height": undefined,
+              "justifyContent": "flex-start",
+              "marginBottom": undefined,
+              "marginHorizontal": undefined,
+              "marginLeft": 20,
+              "marginRight": undefined,
+              "marginTop": undefined,
+              "marginVertical": undefined,
+              "padding": undefined,
+              "paddingBottom": undefined,
+              "paddingHorizontal": undefined,
+              "paddingTop": undefined,
+              "paddingVertical": undefined,
+              "width": undefined,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#14C46F",
+                "fontFamily": "Montserrat-Regular",
+                "fontSize": 14,
+                "opacity": undefined,
+                "textAlign": "right",
+              },
+              undefined,
+            ]
+          }
+        >
+          + R$13.27
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

@@ -1,0 +1,362 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header test should take snapshot of component 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "alignSelf": "auto",
+        "backgroundColor": "transparent",
+        "borderRadius": undefined,
+        "flex": 0,
+        "flexDirection": "row",
+        "height": undefined,
+        "justifyContent": "space-between",
+        "marginBottom": undefined,
+        "marginHorizontal": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": 26,
+        "marginVertical": undefined,
+        "padding": 20,
+        "paddingBottom": undefined,
+        "paddingHorizontal": undefined,
+        "paddingTop": undefined,
+        "paddingVertical": undefined,
+        "width": undefined,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "alignSelf": "auto",
+          "backgroundColor": "transparent",
+          "borderRadius": undefined,
+          "flex": 1,
+          "flexDirection": "row",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "marginBottom": undefined,
+          "marginHorizontal": undefined,
+          "marginLeft": undefined,
+          "marginRight": undefined,
+          "marginTop": undefined,
+          "marginVertical": undefined,
+          "padding": undefined,
+          "paddingBottom": undefined,
+          "paddingHorizontal": undefined,
+          "paddingTop": undefined,
+          "paddingVertical": undefined,
+          "width": undefined,
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": undefined,
+            "alignSelf": "auto",
+            "backgroundColor": "transparent",
+            "borderRadius": undefined,
+            "flex": 0,
+            "flexDirection": "column",
+            "height": undefined,
+            "justifyContent": "flex-start",
+            "marginBottom": undefined,
+            "marginHorizontal": undefined,
+            "marginLeft": undefined,
+            "marginRight": 3,
+            "marginTop": undefined,
+            "marginVertical": undefined,
+            "padding": undefined,
+            "paddingBottom": undefined,
+            "paddingHorizontal": undefined,
+            "paddingTop": undefined,
+            "paddingVertical": undefined,
+            "width": undefined,
+          },
+          undefined,
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#EC008C",
+              "fontFamily": "Montserrat-Bold",
+              "fontSize": 16,
+              "opacity": undefined,
+              "textAlign": "left",
+            },
+            undefined,
+          ]
+        }
+      >
+        meu
+      </Text>
+    </View>
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={18}
+      bbWidth={64}
+      fill="none"
+      focusable={false}
+      height={18}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "flex": 0,
+            "height": 18,
+            "width": 64,
+          },
+        ]
+      }
+      vbHeight={18}
+      vbWidth={64}
+      width={64}
+    >
+      <RNSVGGroup
+        fill={null}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+      >
+        <RNSVGPath
+          clipRule={0}
+          d="M50.133 0c-4.61 0-8.364 3.729-8.364 8.303 0 4.573 3.755 8.302 8.364 8.302a8.41 8.41 0 003.969-.992L56.44 18l1.79-1.838-2.07-2.119a8.232 8.232 0 002.338-5.74C58.498 3.715 54.742 0 50.133 0zm4.25 12.206l-2.205-2.254-1.79 1.838 1.803 1.85a5.826 5.826 0 01-2.058.363c-3.22 0-5.825-2.562-5.825-5.7 0-3.152 2.618-5.7 5.825-5.7 3.22 0 5.826 2.56 5.826 5.7.013 1.502-.601 2.883-1.577 3.903zM2.405 5.553a6.256 6.256 0 014.115-1.53c3.474 0 6.294 2.804 6.307 6.251 0 3.447-2.82 6.25-6.293 6.25a6.282 6.282 0 01-4.116-1.528v1.207H0V.363h2.405v5.19zm.24 4.721c0 2.093 1.738 3.783 3.875 3.783 2.138 0 3.875-1.69 3.875-3.783 0-2.092-1.737-3.782-3.875-3.782-2.137 0-3.874 1.703-3.874 3.782zM20.217 4.037c1.577 0 3.007.577 4.116 1.53v-1.14h2.418v11.789h-2.419v-1.207a6.256 6.256 0 01-4.115 1.529c-3.474 0-6.293-2.803-6.293-6.25 0-3.448 2.82-6.25 6.293-6.25zm-3.875 6.237c0 2.093 1.737 3.783 3.875 3.783s3.875-1.69 3.875-3.783c0-2.092-1.737-3.782-3.875-3.782s-3.875 1.703-3.875 3.782z"
+          fill={4293656716}
+          fillRule={0}
+          propList={
+            Array [
+              "fill",
+              "fillRule",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M60.742 4.413h2.418v11.79h-2.418V4.413zM61.957 3.393c.938 0 1.697-.75 1.697-1.676 0-.926-.76-1.677-1.697-1.677S60.26.79 60.26 1.717c0 .926.76 1.676 1.697 1.676zM31.507 5.687c.828-.845 1.91-1.502 3.527-1.502 2.806 0 5.13 2.36 5.144 5.27v6.761H37.76V9.872c0-1.757-1.403-3.193-3.127-3.193-1.723 0-3.126 1.422-3.126 3.193v6.344h-2.419V4.426h2.419v1.26z"
+          fill={4293656716}
+          propList={
+            Array [
+              "fill",
+            ]
+          }
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": undefined,
+            "alignSelf": "auto",
+            "backgroundColor": "transparent",
+            "borderRadius": undefined,
+            "flex": 0,
+            "flexDirection": "column",
+            "height": undefined,
+            "justifyContent": "flex-start",
+            "marginBottom": undefined,
+            "marginHorizontal": undefined,
+            "marginLeft": 8,
+            "marginRight": undefined,
+            "marginTop": undefined,
+            "marginVertical": undefined,
+            "padding": undefined,
+            "paddingBottom": undefined,
+            "paddingHorizontal": undefined,
+            "paddingTop": undefined,
+            "paddingVertical": undefined,
+            "width": undefined,
+          },
+          undefined,
+        ]
+      }
+    >
+      <RNSVGSvgView
+        align="xMidYMid"
+        bbHeight={7}
+        bbWidth={12}
+        fill="none"
+        focusable={false}
+        height={7}
+        meetOrSlice={0}
+        minX={0}
+        minY={0}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            Object {
+              "flex": 0,
+              "height": 7,
+              "width": 12,
+            },
+          ]
+        }
+        vbHeight={7}
+        vbWidth={12}
+        width={12}
+      >
+        <RNSVGGroup
+          fill={null}
+          propList={
+            Array [
+              "fill",
+            ]
+          }
+        >
+          <RNSVGPath
+            d="M1 1l5 5 5-5"
+            propList={
+              Array [
+                "stroke",
+                "strokeWidth",
+                "strokeLinecap",
+                "strokeLinejoin",
+              ]
+            }
+            stroke={4293656716}
+            strokeLinecap={1}
+            strokeLinejoin={1}
+            strokeWidth={2}
+          />
+        </RNSVGGroup>
+      </RNSVGSvgView>
+    </View>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": undefined,
+            "alignSelf": "auto",
+            "backgroundColor": "transparent",
+            "borderRadius": undefined,
+            "flex": 0,
+            "flexDirection": "column",
+            "height": undefined,
+            "justifyContent": "flex-start",
+            "marginBottom": undefined,
+            "marginHorizontal": undefined,
+            "marginLeft": undefined,
+            "marginRight": undefined,
+            "marginTop": undefined,
+            "marginVertical": undefined,
+            "padding": undefined,
+            "paddingBottom": undefined,
+            "paddingHorizontal": undefined,
+            "paddingTop": undefined,
+            "paddingVertical": undefined,
+            "width": undefined,
+          },
+          undefined,
+        ]
+      }
+    >
+      <RNSVGSvgView
+        align="xMidYMid"
+        bbHeight={24}
+        bbWidth={24}
+        fill="none"
+        focusable={false}
+        height={24}
+        meetOrSlice={0}
+        minX={0}
+        minY={0}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            Object {
+              "flex": 0,
+              "height": 24,
+              "width": 24,
+            },
+          ]
+        }
+        vbHeight={24}
+        vbWidth={24}
+        width={24}
+      >
+        <RNSVGGroup
+          fill={null}
+          propList={
+            Array [
+              "fill",
+            ]
+          }
+        >
+          <RNSVGPath
+            d="M22 20v1a1 1 0 00.928-1.373L22 20zM2 20l-.928-.373A1 1 0 002 21v-1zm1.905-4.737l.928.373.072-.18v-.193h-1zm16.19 0h-1v.194l.072.18.928-.374zM22 19H2v2h20v-2zM4.905 10.053C4.905 6.167 8.08 3 12 3V1c-5.014 0-9.095 4.052-9.095 9.053h2zM12 3c3.92 0 7.095 3.167 7.095 7.053h2C21.095 5.053 17.014 1 12 1v2zM2.928 20.373l1.905-4.737-1.856-.746-1.905 4.737 1.856.746zm1.977-5.11v-5.21h-2v5.21h2zm14.19-5.21v5.21h2v-5.21h-2zm.072 5.583l1.905 4.737 1.856-.746-1.905-4.737-1.856.746z"
+            fill={4278190080}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+          />
+          <RNSVGPath
+            d="M14 21c0 1.106-.894 2-2 2-1.106 0-2-.894-2-2"
+            propList={
+              Array [
+                "stroke",
+                "strokeWidth",
+                "strokeMiterlimit",
+              ]
+            }
+            stroke={4278190080}
+            strokeMiterlimit={10}
+            strokeWidth={2}
+          />
+          <RNSVGCircle
+            cx={20}
+            cy={5}
+            fill={4293656716}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+            r={4}
+          />
+        </RNSVGGroup>
+      </RNSVGSvgView>
+    </View>
+  </View>
+</View>
+`;

@@ -1,0 +1,183 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card test should take snapshot of component 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": undefined,
+          "alignSelf": "auto",
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 4,
+          "elevation": 4,
+          "flex": 0,
+          "flexDirection": "column",
+          "height": 104,
+          "justifyContent": "flex-start",
+          "marginBottom": undefined,
+          "marginHorizontal": undefined,
+          "marginLeft": undefined,
+          "marginRight": undefined,
+          "marginTop": undefined,
+          "marginVertical": undefined,
+          "padding": 12,
+          "paddingBottom": undefined,
+          "paddingHorizontal": undefined,
+          "paddingTop": undefined,
+          "paddingVertical": undefined,
+          "shadowColor": "#000000",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 0.23,
+          "shadowRadius": 2.62,
+          "width": 120,
+        },
+        undefined,
+      ]
+    }
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={36}
+      bbWidth={36}
+      fill="none"
+      focusable={false}
+      height={36}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "flex": 0,
+            "height": 36,
+            "width": 36,
+          },
+        ]
+      }
+      vbHeight={36}
+      vbWidth={36}
+      width={36}
+    >
+      <RNSVGGroup
+        fill={null}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+      >
+        <RNSVGPath
+          d="M22.22 24.923h0l-4.044-4.045-4.06 4.06h0a5.093 5.093 0 01-2.22 1.305l3.803 3.804s0 0 0 0a3.254 3.254 0 004.602 0l3.895-3.895a5.095 5.095 0 01-1.975-1.23zm-4.2-4.201v.001-.001zm.311.002s0 0 0 0h0zM14.116 11.062h0l4.06 4.06 4.044-4.045h0a5.098 5.098 0 011.976-1.229L20.3 5.953a3.254 3.254 0 00-4.602 0l-3.803 3.804a5.092 5.092 0 012.22 1.305zM30.047 15.7h0l-2.884-2.885h-1.327c-.492 0-.98.202-1.327.55h0l-4.2 4.2s0 0 0 0c-.171.17-.357.316-.555.438a2.885 2.885 0 01.555.433l4.2 4.199h0c.347.348.835.55 1.327.55h1.327l2.884-2.884s0 0 0 0a3.254 3.254 0 000-4.602zm-14.003 2.735a2.88 2.88 0 01.554-.432 3.016 3.016 0 01-.554-.437h0l-4.216-4.216h0a1.897 1.897 0 00-1.327-.55H8.853l-2.9 2.9h0a3.254 3.254 0 000 4.6s0 0 0 0l2.9 2.9H10.5c.492 0 .98-.201 1.327-.55h0l4.216-4.215h0zM8.684 12.8h.003-.003zm0 10.4h.003-.003zm18.635-.015h-.002.002z"
+          propList={
+            Array [
+              "stroke",
+              "strokeWidth",
+            ]
+          }
+          stroke={4293656716}
+          strokeWidth={2}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": undefined,
+            "alignSelf": "auto",
+            "backgroundColor": "transparent",
+            "borderRadius": undefined,
+            "flex": 0,
+            "flexDirection": "column",
+            "height": undefined,
+            "justifyContent": "flex-start",
+            "marginBottom": undefined,
+            "marginHorizontal": undefined,
+            "marginLeft": undefined,
+            "marginRight": undefined,
+            "marginTop": 33,
+            "marginVertical": undefined,
+            "padding": undefined,
+            "paddingBottom": undefined,
+            "paddingHorizontal": undefined,
+            "paddingTop": undefined,
+            "paddingVertical": undefined,
+            "width": undefined,
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": undefined,
+              "alignSelf": "auto",
+              "backgroundColor": "transparent",
+              "borderRadius": undefined,
+              "flex": 0,
+              "flexDirection": "column",
+              "height": undefined,
+              "justifyContent": "flex-start",
+              "marginBottom": undefined,
+              "marginHorizontal": undefined,
+              "marginLeft": undefined,
+              "marginRight": undefined,
+              "marginTop": undefined,
+              "marginVertical": undefined,
+              "padding": undefined,
+              "paddingBottom": undefined,
+              "paddingHorizontal": undefined,
+              "paddingTop": undefined,
+              "paddingVertical": undefined,
+              "width": undefined,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#333333",
+                "fontFamily": "Montserrat-Bold",
+                "fontSize": 14,
+                "opacity": undefined,
+                "textAlign": "left",
+              },
+              undefined,
+            ]
+          }
+        >
+          PIX
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

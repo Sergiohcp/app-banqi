@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Touchable test should take snapshot of component 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": undefined,
+          "alignSelf": "auto",
+          "backgroundColor": "transparent",
+          "borderRadius": undefined,
+          "flex": 0,
+          "flexDirection": "column",
+          "height": undefined,
+          "justifyContent": "flex-start",
+          "marginBottom": undefined,
+          "marginHorizontal": undefined,
+          "marginLeft": undefined,
+          "marginRight": undefined,
+          "marginTop": undefined,
+          "marginVertical": undefined,
+          "padding": undefined,
+          "paddingBottom": undefined,
+          "paddingHorizontal": undefined,
+          "paddingTop": undefined,
+          "paddingVertical": undefined,
+          "width": undefined,
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#333333",
+            "fontFamily": "Montserrat-Regular",
+            "fontSize": 12,
+            "opacity": undefined,
+            "textAlign": "left",
+          },
+          undefined,
+        ]
+      }
+    >
+      Snapshot Test
+    </Text>
+  </View>
+</View>
+`;
