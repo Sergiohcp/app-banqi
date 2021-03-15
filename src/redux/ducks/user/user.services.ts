@@ -5,5 +5,5 @@ import { IUserResponse } from "./user.types";
 
 // PT: Aqui é apenas uma simulação de uma requisição HTTP com axios
 // EN: Here is just a simulation of an HTTP request with axios
-export const getUserService = () =>
+export const getUserService = async () =>
   banQiAPI.get<IUserResponse>("/banqi.com.br").then(() => mockUser);

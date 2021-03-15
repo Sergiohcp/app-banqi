@@ -1,5 +1,6 @@
 import { IUser, IUserResponse } from "@redux/ducks/user/user.types";
 import moment from "moment";
+import { Platform } from "react-native";
 
 import Transaction from "./Transaction";
 
@@ -14,7 +15,7 @@ class User implements IUser {
   constructor({ _id, name, balance, transactions }: IUserResponse) {
     this.id = _id;
     this.name = name;
-    this.balance = Number(balance);
+    this.balance = parseFloat(balance);
     this.transactions = transactions
       .map((transaction) => new Transaction(transaction))
       .sort((a, b) => {
@@ -26,10 +27,17 @@ class User implements IUser {
   }
 
   balanceCurrency() {
-    return this.balance.toLocaleString("pt-br", {
+    const balance = this.balance.toLocaleString("pt-br", {
       style: "currency",
       currency: "BRL",
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
     });
+
+    if (Platform.OS === "android") {
+      return `R$ ${balance}`;
+    }
+    return balance;
   }
 
   firstThreeTransactions() {

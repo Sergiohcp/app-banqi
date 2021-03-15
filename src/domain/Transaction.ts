@@ -3,6 +3,7 @@ import {
   ITransactionResponse,
 } from "@redux/ducks/user/user.types";
 import moment from "moment";
+import { Platform } from "react-native";
 
 class Transaction implements ITransaction {
   id: string;
@@ -18,12 +19,16 @@ class Transaction implements ITransaction {
   }
 
   amountCurrency() {
-    return `${this.amount > 0 ? "+" : "-"} ${Math.abs(
-      this.amount
-    ).toLocaleString("pt-br", {
+    let amount = Math.abs(this.amount).toLocaleString("pt-br", {
       style: "currency",
       currency: "BRL",
-    })}`;
+    });
+
+    if (Platform.OS === "android") {
+      amount = `R$ ${amount}`;
+    }
+
+    return `${this.amount > 0 ? "+" : "-"} ${amount}`;
   }
 
   dateFormated() {

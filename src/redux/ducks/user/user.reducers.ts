@@ -10,7 +10,7 @@ export const INITIAL_STATE: User = new User({
 
 export default (
   state = INITIAL_STATE,
-  action: { type: string; payload: any }
+  action: { type: string; payload?: any }
 ): any => {
   switch (action.type) {
     case UserReducers.UPDATE_STATE:

@@ -37,6 +37,10 @@ react-native run-android
 
 This project could use Redux or Context API to state management. I chose redux, for the greatest worldwide use.
 
+## Unit tests
+
+This project have unit tests using react-test-renderer and redux-mock-store libraries.
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
