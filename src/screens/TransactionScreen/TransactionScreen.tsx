@@ -35,6 +35,10 @@ const TransactionScreen: React.FC = () => {
   const transactionInfos = [
     {
       title: "ID",
+      description: transaction.id,
+    },
+    {
+      title: "Nome",
       description: transaction.description,
     },
     {

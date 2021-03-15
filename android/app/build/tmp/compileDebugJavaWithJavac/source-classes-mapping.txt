@@ -1,0 +1,14 @@
+com/banqi/ReactNativeFlipper.java
+ com.banqi.ReactNativeFlipper
+ com.banqi.ReactNativeFlipper$1
+ com.banqi.ReactNativeFlipper$2
+ com.banqi.ReactNativeFlipper$2$1
+com/banqi/BuildConfig.java
+ com.banqi.BuildConfig
+com/banqi/MainActivity.java
+ com.banqi.MainActivity
+com/banqi/MainApplication.java
+ com.banqi.MainApplication
+ com.banqi.MainApplication$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
